@@ -1,0 +1,17 @@
+{
+  "name": "ws-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js --attach"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-ws": "^3.0.0",
+    "pm2": "^2.5.0",
+    "ws": "^3.0.0"
+  }
+}

@@ -1,0 +1,17 @@
+body {
+  padding: 10px;
+}
+#name {
+  width: 100px;
+}
+
+#message {
+  width: 400px;
+}
+
+.name {
+  display: inline-block;
+  width: 100px;
+  color: blue;
+  font-weight: bold;
+}
