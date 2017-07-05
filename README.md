@@ -1,5 +1,5 @@
 # CODEPREP ws-chat
-Server side implementation for CODEPREP websocket chat book.
+Server side implementation for [CODEPREP](https://codeprep.jp/) websocket chat book.
 
 ## How to run on local
 
