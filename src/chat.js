@@ -21,11 +21,14 @@ function handleChat(ws, request) {
   // WebSocketにidを割り振り配列に保存 
   ws.id = ++id;
   connections.push(ws);
+  const initialMessage = connections.length === 1 ?
+    "Hi!, there is 1 user in this room." : 
+    "Hi!, there are " + connections.length + " users in this room.";
 
   // 最初のメッセージを送信
   send(ws, {
     name: "CODEPREP",
-    message: "Hi!, there are " + connections.length + " users in this room."
+    message: initialMessage
   });
 
   // HerokuのWebSocketタイムアウトを避けるため30秒ごとにpingメッセージを送信する
