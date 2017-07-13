@@ -6,6 +6,9 @@
   "scripts": {
     "start": "pm2 start index.js --attach"
   },
+  "engines": {
+    "node": "6.11.1"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
